@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    overflow: hidden;
+}
+
+body,
+input {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height:100vh;
+    
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    height:100%
+}
+
+.col-left {
+    width: 70%;
+    height: 100%;
+    padding: 41px 39px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    top: 41px;
+    left: 39px;
+}
+
+.col-right {
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #76eee4, #61dfb8);
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* color: #DB4E34; */
+    font-size: 1.9rem;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* margin-top: 18rem; */
+}
+
+.form-container-content{
+    
+    text-align: center;
+    color: #3A3A3A;
+}
+
+.form-container-content h1{
+    font-size: 56px;
+    
+}
+.form-container-content p{
+    font-size: 24px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    max-width: 618px;
+    width: 100%;
+    margin-top: 41px;
+    justify-content: center;
+}
+.form-container form input {
+    margin-bottom: 20px;
+    padding: 17px 19px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #EEEEEE;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+
+
+.form-container form input.btn,.btn{
+    width: auto;
+    background-color: #00C9A8;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 56px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.form-container form input.btn:hover{
+    background-color: #009b81;
+}
+
+.btn:hover{
+    background-color: #009b81;
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #3A3A3A;
+    margin-top: 1rem;
+}
+
+.btn-white:hover{
+   background-color: rgb(189, 253, 249);
+}
+
+.forget-pw{
+    text-decoration: none;
+    margin-left: auto;
+    font-size: 24px;
+    color: #3A3A3A;
+    margin-bottom: 11px;
+    font-weight: 400;
+}
+
+.col-right-content{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#sign-in-section{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    transition: all 1.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#sign-in-section.animation{   
+    transition: all 1.5s ease-in-out;
+    transform: translateX(-110%);
+}
+
+#register-section {
+    height:100vh;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* responsive sign-in */
+@media screen and (max-width: 1024px){
+    
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0%;
+    }
+    .col-right{
+        width: 100%;
+    }
+    .col-right.col-right-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .col-left{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-container-content{
+        margin-top: 6rem;
+        
+    }
+
+    .form-container form{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .col-left{
+        overflow: hidden;
+    }
+    .col-right{
+        width: 100%;
+        height: 100%;
+    }
+    
+}

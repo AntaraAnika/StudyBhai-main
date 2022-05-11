@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://kit.fontawesome.com/dd1a584563.js" crossorigin="anonymous"></script>
+
+
+    <title>Study Bhai</title>
+</head>
+
+<body>
+    <section id="sign-in-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-left">
+
+                    <div class="logo">
+                        <img src="./images/StudyBhai Logo 1.png" alt="">
+                    </div>
+                    <div class="form-container">
+
+                        <div class="form-container-content">
+                            <h1>Sign in to Your Account</h1>
+                            <p>Log in Using Social Networks</p>
+                            <div class="social-icon">
+                            <a href="https://www.google.com/" class="social-icon">
+                                <i style="color: rgb(156, 0, 0);" class="fa-brands fa-google"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" class="social-icon">
+                                <i style="color: rgb(207, 0, 52);" class="fa-brands fa-instagram-square"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/" class="social-icon">
+                                <i style="color: rgb(47, 137, 255)" class="fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/" class="social-icon">
+                                <i style="color: rgb(0, 39, 75);" class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Username"></input>
+                            <input type="password" placeholder="Password"></input>
+                            <a class="forget-pw" href="#">Forget Password?</a>
+                            <input class="btn" type="submit" value="Sign in"></input>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="col-right-content">
+                        <h1>New Here?</h1>
+                        <h3>Register and Start Your Business.</h3>
+                        <Button onClick="register(event)" class="btn btn-white">Register</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- register -->
+    <section id="register-section">
+        <div class="container-register row-register">
+            <div class="column sign-up-content">
+                <h2 class="title">Studybhai For Business</h2>
+                <h4>Get Your Demo!</h4>
+                <p class="social-text">See why leading organizations choose Studybhai
+                    Business as their destination for employee learning.</p>
+
+            </div>
+
+
+            <div class="column">
+                <form action="#" class="sign-up-form">
+                    <div class=" row-register">
+                        <div class="column first-name"><input type="text" name="" id="" placeholder="First Name"></div>
+                        <div class="column last-name"><input type="text" name="" id="" placeholder="Last Name"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="" id="" placeholder="Work Email">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="" id="" placeholder="Phone Number">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="" id="" placeholder="Company Name">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="" id="" placeholder="Job title">
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="" id="" placeholder="What are your training needs?">
+                    </div>
+                    <Button onClick="handleGetIn(event)" class="btn">Get in Touch</Button>
+
+                    <small>By signing up, you agree to our terms and privacy policy.You agree that we can contact you
+                        about
+                        Studybhai and use data from third parties to personalize your experience</small>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
